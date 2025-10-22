@@ -1,0 +1,37 @@
+body {
+      font-family: Arial;
+      background: linear-gradient(135deg, #f9e2b3, #ffb347);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    form {
+      background: #fff;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      width: 300px;
+    }
+    input, select, button {
+      width: 100%;
+      margin: 8px 0;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    button {
+      background: #ff944d;
+      color: white;
+      border: none;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #ff6600;
+      transform: scale(1.05);
+    }
+    #resultado {
+      margin-top: 10px;
+      text-align: center;
+      color: green;
+    }

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>gasto de energia en casa</title>
+  <style>
+    body {
+      font-family: Arial;
+      background: linear-gradient(135deg, #6800FF, #D400FF);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    form {
+      background: #fff;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      width: 300px;
+    }
+    input, select, button {
+      width: 100%;
+      margin: 8px 0;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    button {
+      background: #ff944d;
+      color: white;
+      border: none;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #ff6600;
+      transform: scale(1.05);
+    }
+    #resultado {
+      margin-top: 10px;
+      text-align: center;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <form id="formRegistro">
+    <h2>gasto de energia en el hogar</h2>
+    <label>nombre del cliente completo</label>
+    <input type="text" id="nombre" placeholder="Nombre del cliente" required>
+    <label> direccion completa</label>
+    <input type="text" id="direccion" placeholder="direccion" required>
+    <label> consumo mensual </label>
+    <input type="number" id="cunsumomensual" placeholder="consumo mensual">
+   <label> donde crees que se gasta mas electricidad en tu casa</label>
+    <input type="text" id="dondecreesgastarmas " placeholder="donde crees gastar mas">
+    <select id="interes">
+      <option value="">cuantas personas viven  </option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+    </select>
+    <button type="submit">Enviar registro</button>
+    <div id="resultado"></div>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
